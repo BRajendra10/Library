@@ -13,7 +13,7 @@ function Gallery() {
 
     return (
         <div className="w-full min-h-screen grid grid-cols-15 gap-3 py-5">
-            <div className="col-start-1 col-end-16 sm:col-start-2 sm:col-end-15 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5 p-3 sm:p-5 shadow-2xl">
+            <div className="col-start-1 col-end-16 sm:col-start-2 sm:col-end-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5 p-3 sm:p-5 shadow-2xl">
                 {
                     books.map((el, inedx) => {
                         return (
