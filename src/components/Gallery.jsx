@@ -17,10 +17,15 @@ function Gallery() {
                 {
                     books.map((el, inedx) => {
                         return (
-                            <div className="shadow-lg p-3" key={inedx}>
-                                <h2 className="text-lg font-semibold my-2">Title: {el.title}</h2>
-                                <span className="block text-sm font-semibold">Author: {el.author}</span>
-                                <span className="block text-sm font-semibold">publisher: {el.publisher}</span>
+                            <div className="shadow-lg grid grid-cols-12 p-3" key={inedx}>
+                                <img className="w-full h-full object-contain col-span-4" src={el.image} alt="" />
+                                <div className="col-span-8 p-2">
+                                    <h2 className="text-lg font-semibold">Title: {el.title}</h2>
+                                    <p className="text-lg">{el.description}</p>
+
+                                    <span className="block text-sm font-semibold">genre: {el.genre}</span>
+                                    <span className="block text-sm font-semibold">Author: {el.author}</span>
+                                </div>
                             </div>
                         )
                     })
