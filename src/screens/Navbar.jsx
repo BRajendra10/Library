@@ -1,4 +1,5 @@
- import React from 'react'
+import React from 'react'
+import { NavLink } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 
 function Navbar() {
@@ -9,15 +10,9 @@ function Navbar() {
             <button className="lg:hidden text-xl font-bold hover:text-2xl"><AiOutlineMenu /></button>
 
             <ul className="hidden lg:flex">
-                <li>
-                    <a className="p-2 uppercase text-stone-600 hover:text-stone-950" href="#">gallery</a>
-                </li>
-                <li>
-                    <a className="p-2 uppercase text-stone-600 hover:text-stone-950" href="#">contact</a>
-                </li>
-                <li>
-                    <a className="p-2 uppercase text-stone-600 hover:text-stone-950" href="#">login</a>
-                </li>
+                <NavLink className="p-2 uppercase text-stone-600 hover:text-stone-950" to={"/"}>Gallery</NavLink>
+                <NavLink className="p-2 uppercase text-stone-600 hover:text-stone-950" to={"/members"}>Members</NavLink>
+                <NavLink className="p-2 uppercase text-stone-600 hover:text-stone-950" to={"/login"}>Login</NavLink>
             </ul>
         </nav>
     )

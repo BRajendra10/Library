@@ -1,13 +1,13 @@
 import './App.css'
-import Gallery from './components/Gallery'
-import Navbar from './components/Navbar'
+import Navbar from './screens/Navbar'
+import Navigation from './routes/Navigation'
 
 function App() {
   
   return(
     <div className="w-full h-screen">
       <Navbar />
-      <Gallery />
+      <Navigation />
     </div>
   )
 }
