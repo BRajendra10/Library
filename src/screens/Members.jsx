@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import MemberCard from '../components/MembersDisplay'
 
 function Members() {
   const [data, setdata] = useState([])
@@ -21,7 +22,7 @@ function Members() {
 
   return (
     <div className="w-full min-h-screen flex justify-center items-center bg-blue-200">
-      <h1 className="text-5xl">Members</h1>
+      {/* <MemberCard /> */}
     </div>
   )
 }
